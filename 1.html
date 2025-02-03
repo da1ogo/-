@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity environment="preset: forest; dressingAmount: 200"></a-entity>
+
+      
+      <a-entity camera look-controls wasd-controls position="0 1.6 0">
+        <a-cursor color="brown"></a-cursor>
+      </a-entity>
+
+      
+      <a-sound src="1.mp3" position="2 2 -5" autoplay="true" loop="true"></a-sound>
+      
+      
+      <a-sound src="2.mp3" position="1 5 -6" autoplay="true" loop="true"></a-sound>
+
+      
+      <a-box src="https://i.imgur.com/mYmmbrp.jpg" position="1 5 -6" rotation="0 45 45" scale="2 2 2"
+             animation="property: rotation; to: 0 405 45; loop: true; dur: 4000"></a-box>
+      
+      
+      <a-box src="https://i.imgur.com/mYmmbrp.jpg" position="6 2 -5" rotation="0 45 45" scale="1.5 1.5 1.5"
+             animation="property: scale; to: 2 2 2; dir: alternate; dur: 2000; loop: true"></a-box>
+      
+      
+      <a-cone src="https://i.imgur.com/mYmmbrp.jpg" position="5 5 -5" radius-bottom="1" height="2.5" rotation="0 45 0"
+               animation="property: rotation; to: 0 405 0; loop: true; dur: 4000"></a-cone>
+      
+      
+      <a-torus src="https://i.imgur.com/mYmmbrp.jpg" position="2 2 -5" radius="1" radius-tubular="0.3" rotation="0 45 0"
+                animation="property: scale; to: 1.2 1.2 1.2; dir: alternate; dur: 2000; loop: true"></a-torus>
+
+      <a-sky color="#222"></a-sky>
+    </a-scene>
+  </body>
+</html>
